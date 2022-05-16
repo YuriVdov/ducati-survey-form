@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Ducati Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Ducati Survey Form</h1>
+        <p id="description">#WeRideAsOne: thousands of Ducatisti colored the streets of every city around the world</p>
+        <form id="survey-form" action="https://formspree.io/f/mdobyynw" method="post">
+            <fieldset>
+                <label id="name-label">
+                    Enter Your Name: <input type="text" id="name" name="name" placeholder="Name" required/>
+                </label>
+                <label id="email-label">
+                    Enter Your Email: <input type="email" id="email" name="email" placeholder="Email" required/>
+                </label>
+                <label id="number-label">
+                    Enter Your Age: <input type="number" id="number" name="age" min="3" max="300" placeholder="Age" required/>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    <input type="radio" name="ducatisti-type" class="inline" value="ducati-owner-now">I have the Ducati now
+                </label>
+                <label>
+                    <input type="radio" name="ducatisti-type" class="inline" value="ducati-owner-soon">I will have a Ducati soon
+                </label>
+                <label id="model-label">
+                    Select Your Ducati model: 
+                    <select id="dropdown" name="model">
+                        <option value=""></option>
+                        <option value="desertx">DesertX</option>
+                        <option value="diavel">Diavel</option>
+                        <option value="xdiavel">XDiavel</option>
+                        <option value="hypermotard">Hypermotard</option>
+                        <option value="monster">Monster</option>
+                        <option value="streetfighter">Streetfighter</option>
+                        <option value="multistrada">Multistrada</option>
+                        <option value="panigale">Panigale</option>
+                        <option value="superleggera">Superleggera</option>
+                        <option value="supersport">SuperSport</option>
+                        <option value="e-mtb">E-MTB</option>
+                        <option value="other-model">Other models</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <p>Select Your Ducati color:</p>
+                <label>
+                    <input type="checkbox" name="color" class="inline" value="rosso">Rosso
+                </label>
+                <label>
+                    <input type="checkbox" name="color" class="inline" value="giallo">Giallo
+                </label>
+                <label>
+                    <input type="checkbox" name="color" class="inline" value="other-color">Other color
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    Tell us Your Ducati Story: <textarea name="ducati-story" rows="3" cols="30" placeholder="Write your story here..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" id="submit" value="submit">
+        </form>
+    </body>
+</html>
